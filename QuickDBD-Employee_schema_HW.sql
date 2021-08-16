@@ -4,7 +4,7 @@
 
 
 CREATE TABLE "Departments" (
-    "dept_no" int   NOT NULL,
+    "dept_no" varchar   NOT NULL,
     "dept_name" varchar   NOT NULL,
     CONSTRAINT "pk_Departments" PRIMARY KEY (
         "dept_no"
@@ -14,7 +14,7 @@ CREATE TABLE "Departments" (
 CREATE TABLE "Employees" (
     "emp_no" int   NOT NULL,
     "emp_title_id" varchar   NOT NULL,
-    "birth_date" int   NOT NULL,
+    "birth_date" varchar   NOT NULL,
     "first_name" varchar   NOT NULL,
     "last_name" varchar   NOT NULL,
     "sex" varchar   NOT NULL,
@@ -26,7 +26,7 @@ CREATE TABLE "Employees" (
 
 CREATE TABLE "Department_employees" (
     "emp_no" int   NOT NULL,
-    "dept_no" int   NOT NULL,
+    "dept_no" varchar   NOT NULL,
     CONSTRAINT "pk_Department_employees" PRIMARY KEY (
         "emp_no","dept_no"
      )
